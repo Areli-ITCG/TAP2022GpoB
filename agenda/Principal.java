@@ -2,6 +2,6 @@ public class Principal
 {
    public static void main (String [] args)
    {
-     JFrameMostrar elist = new JFrameMostrar();
+     JFrameIngreso2022 elist = new JFrameIngreso2022();
    }
 }
