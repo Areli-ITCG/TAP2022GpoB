@@ -18,4 +18,21 @@ public class MPersona
     objPersona.setTipo(tipo);
     Arrpersona.add(objPersona);//Agrega el objeto al arrayList
   }
+  public void desplegar()
+  {
+     System.out.println("...PERSONAS EN LA AGENDA...");
+     
+     Iterator<Persona> itrPersona = Arrpersona.iterator();
+     while(itrPersona.hasNext()){
+     Persona persona = itrPersona.next();
+     System.out.println("Nombre: " + persona.getNombre());
+     System.out.println("Telefono: " + persona.getTelefono());
+     System.out.println("Tipo: " + persona.getTipo());
+     }
+   }
+   
+  public ArrayList Datos()
+  {
+     return Arrpersona;
+  }
 }
