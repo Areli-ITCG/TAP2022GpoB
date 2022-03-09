@@ -50,7 +50,7 @@ public class PanelDatos2022 extends JPanel implements ActionListener
     
     btnGuardar = new JButton("Guardar");
     btnGuardar.addActionListener(this);
-    btnCancelar = new JButton("Cancelar");
+    btnCancelar = new JButton("Mostrar");
     btnCancelar.addActionListener(this);
     
     add(btnGuardar);
@@ -89,7 +89,8 @@ public class PanelDatos2022 extends JPanel implements ActionListener
 
      }
       if(e.getSource()==btnCancelar){
-      System.exit(0);
+      //System.exit(0);
+      JFrameTablaDatos jft = new JFrameTablaDatos();
       }
   }
 }
